@@ -58,7 +58,7 @@ p {
   line-height: 1.5em;
   margin-top: 25px;
 }
-.content {
+.intro {
   display: inline-block;
   width: 80%;
 }
@@ -71,4 +71,200 @@ button {
   background-color: hsl(231, 69%, 60%);
   color: white;
   border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+}
+
+button.gray {
+  background-color: #f7f7f4;
+  color: #474755;
+  margin-left: 10px;
+  border-bottom: 1px solid #f7f7f4;
+  box-shadow: 1px 4px 3px 0px rgba(214, 217, 224, 0.952);
+}
+
+/* <!--------- 2nd part--------->  */
+
+.features {
+  text-align: center;
+  padding: 0 450px;
+}
+
+.feature-tab {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  color: hsl(229, 8%, 60%);
+  margin: 20px 0;
+  border-bottom: 2px solid rgba(214, 217, 224, 0.952);
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+nav.active {
+  align-items: center;
+  padding: 0px 20px;
+  color: #474755;
+  border-bottom: 4px solid hsl(0, 94%, 66%);
+  display: flex;
+}
+
+.tab-body {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 30px 20px;
+  width: 1150px;
+}
+
+.tab-body img {
+  margin-right: 120px;
+}
+
+.tab-content {
+  display: inline-block;
+  padding: 80px 0;
+
+  margin-right: 50px;
+}
+
+/* <!--------- 3rd part ---------> */
+.download {
+  text-align: center;
+  padding: 0 450px;
+}
+
+.browser {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+}
+
+.chrome {
+  margin-right: 30px;
+  height: 317px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 7px 8px 2px rgba(214, 217, 224, 0.952);
+}
+
+.chrome img {
+  width: 80px;
+  padding-top: 20px;
+}
+
+.chrome h4 {
+  font-size: 18px;
+  padding: 20px 0 10px;
+  margin: 0;
+}
+
+.chrome p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(173, 173, 173) 10%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 20px 4px;
+  background-repeat: repeat-x;
+}
+
+.chrome button {
+  padding: 10px 30px;
+  font-family: font-family: "Rubik", sans-serif;
+}
+
+.firefox {
+  height: 317px;
+  margin-right: 30px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 7px 8px 2px rgba(214, 217, 224, 0.952);
+}
+
+.firefox img {
+  width: 80px;
+  padding-top: 20px;
+}
+
+.firefox h4 {
+  font-size: 18px;
+  padding: 20px 0 10px;
+  margin: 0;
+}
+
+.firefox p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(173, 173, 173) 10%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 20px 4px;
+  background-repeat: repeat-x;
+}
+
+.firefox button {
+  padding: 10px 30px;
+  font-family: font-family: "Rubik", sans-serif;
+}
+
+.opera {
+  margin-top: 100px;
+  height: 317px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 7px 8px 2px rgba(214, 217, 224, 0.952);
+}
+
+.opera img {
+  width: 80px;
+  padding-top: 20px;
+}
+
+.opera h4 {
+  font-size: 18px;
+  padding: 20px 0 10px;
+  margin: 0;
+}
+
+.opera p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(173, 173, 173) 10%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 20px 4px;
+  background-repeat: repeat-x;
+}
+
+
+.opera button {
+  padding: 10px 30px;
+  font-family: font-family: "Rubik", sans-serif;
 }

@@ -11,9 +11,19 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Frontend Mentor | Bookmark landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -31,54 +41,58 @@
     <!--------- header --------->
     <div class="header">
       <div class="logo">
-      <img src="images/logo-bookmark.svg" alt="logo-bookmark" />
+        <img src="images/logo-bookmark.svg" alt="logo-bookmark" />
       </div>
-      <div><ul>
-        <li class="toptab">Features</li>
-        <li class="toptab">Pricing</li>
-        <li class="toptab">Contact</li>
-        <li class="redbtn">Login</li>
-      </ul></div>
+      <div>
+        <ul>
+          <li class="toptab">Features</li>
+          <li class="toptab">Pricing</li>
+          <li class="toptab">Contact</li>
+          <li class="redbtn">Login</li>
+        </ul>
+      </div>
     </div>
     <!--------- 1st part--------->
-    <div class="content">
-      <div class="image"><img src="images/illustration-hero.svg" alt="" ></div>
-      
-        <h2>A Simple Bookmark Manager</h2>
-        <p>
-          A clean and simple interface to organize your favourite websites. Open a
-          new browser tab and see your sites load instantly. Try it for free.
-        </p>
-        <button>Get it on Chrome</button>
-        <button>Get it on Firefox</button>
-      
+    <div class="intro">
+      <div class="image"><img src="images/illustration-hero.svg" alt="" /></div>
+
+      <h2>A Simple Bookmark Manager</h2>
+      <p>
+        A clean and simple interface to organize your favourite websites. Open a
+        new browser tab and see your sites load instantly. Try it for free.
+      </p>
+      <button>Get it on Chrome</button>
+      <button class="gray">Get it on Firefox</button>
     </div>
     <!--------- 2nd part--------->
-    <div>
+    <div class="features">
       <h3>Features</h3>
       <p>
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </p>
-    </div>  
+    </div>
     <!--------------------- tab ------------------------>
-      <div class="featureTab">
-        <button class="tabTitle">Simple Bookmarking</button> 
-        <button class="tabTitle">Speedy Searching</button> 
-        <button class="tabTitle">Easy Sharing</button>  
-        </ul>
+    <div class="feature-tab">
+      <nav class="active">Simple Bookmarking</nav>
+      <nav>Speedy Searching</nav>
+      <nav>Easy Sharing</nav>
+    </div>
+    <!--------- tab content --------->
+    <div class="tab-body">
+      <img src="images/illustration-features-tab-1.svg" alt="" />
+      <div class="tab-content">
+        <h3>Bookmark in one click</h3>
+        <p>
+          Organize your bookmarks however you like. Our simple drag-and-drop
+          interface gives you complete control over how you manage your
+          favourite sites.
+        </p>
+        <button>More Info</button>
       </div>
-      <!--------- tab content --------->
-        <div class="tabBody">
-          <img src="images/illustration-features-tab-1.svg" alt="">
-          <h3>Bookmark in one click</h3>
-          <p>Organize your bookmarks however you like. Our simple drag-and-drop
-          interface gives you complete control over how you manage your favourite
-          sites.</p>
-          <button>More Info</button> 
-        </div>
-      
+    </div>
+    <!--       
         <div class="tabBody">
           <h3>Intelligent search</h3>
           <img src="images/illustration-features-tab-2.svg" alt="">
@@ -92,86 +106,116 @@
           <p>Easily share your bookmarks and collections with others. Create a
           shareable link that you can send at the click of a button.</p>  
           <button>More Info</button> 
-        </div>
+        </div> -->
 
-        <!--------- 3rd part --------->
-    <div>
-      <h3>Download the extension</h3> 
-      <p>We’ve got more browsers in the pipeline. Please do
-      let us know if you’ve got a favourite you’d like us to prioritize.</p>  
+    <!--------- 3rd part --------->
+    <div class="download">
+      <h3>Download the extension</h3>
+      <p>
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+    </div>
+    <div class="browser">
       <div class="chrome">
-        <img src="images/logo-chrome.svg" alt="">
+        <img src="images/logo-chrome.svg" alt="" />
         <h4>Add to Chrome</h4>
-        <p> Minimum version 62</p> 
-        <button>Add & Install Extension </button> 
-      </div> 
+        <p>Minimum version 62</p>
+        <button>Add & Install Extension</button>
+      </div>
       <div class="firefox">
-        <img src="images/logo-firefox.svg" alt="">
-        <h4>Add to Firefox </h4>
-        <p> Minimum version 55</p> 
-        <button>Add & Install Extension </button> 
-      </div> 
-      <div  class="opera">
-        <img src="images/logo-opera.svg" alt="">
+        <img src="images/logo-firefox.svg" alt="" />
+        <h4>Add to Firefox</h4>
+        <p>Minimum version 55</p>
+        <button>Add & Install Extension</button>
+      </div>
+      <div class="opera">
+        <img src="images/logo-opera.svg" alt="" />
         <h4>Add to Opera</h4>
-        <p> Minimum version 46</p> 
-        <button>Add & Install Extension </button> 
-        </div> 
-     </div> 
+        <p>Minimum version 46</p>
+        <button>Add & Install Extension</button>
+      </div>
+    </div>
+
     <!--------- 4th part --------->
     <div>
-    <h3>Frequently Asked Questions</h3> 
-    <p> Here are some of our FAQs. If you have any other questions you’d 
-      like answered please feel free to emailus.</p>
+      <h3>Frequently Asked Questions</h3>
+      <p>
+        Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to emailus.
+      </p>
     </div>
     <div>
       <ul>
-        <li>What is Bookmark?
-          <ul><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
-          mattis.</li></ul>
+        <li>
+          What is Bookmark?
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </li>
+          </ul>
         </li>
-        <li>How can I request a new browser?
-          <ul><li>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-          ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
-          convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-          imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
-          massa, ultricies non ligula. Suspendisse imperdiet.</li></ul>
+        <li>
+          How can I request a new browser?
+          <ul>
+            <li>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </li>
+          </ul>
         </li>
-        <li>Is there a mobile app? 
-          <ul><li>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
-          dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra
-          mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</li></ul>
+        <li>
+          Is there a mobile app?
+          <ul>
+            <li>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </li>
+          </ul>
         </li>
-        <li>What about other Chromium browsers?
-          <ul><li>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
-          euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit. </li></ul>
+        <li>
+          What about other Chromium browsers?
+          <ul>
+            <li>
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </li>
+          </ul>
         </li>
       </ul>
-      <button>More Info </button> 
+      <button>More Info</button>
     </div>
-     <!---------5th part --------->
-  <div> 
-    <p>35,000+ already joined</p>  
-    <h3>Stay up-to-date with what we’re doing</h3> 
-    <input type="text">  <button class="redbtn">Contact Us</button> 
-  </div> 
-     <!--------- footer --------->   
-  <div>
+    <!---------5th part --------->
     <div>
-      <img src="images/logo-bookmark.svg" alt="logo-bookmark" />
-      <ul>
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Contact</li>
-      </ul> 
+      <p>35,000+ already joined</p>
+      <h3>Stay up-to-date with what we’re doing</h3>
+      <input type="text" /> <button class="redbtn">Contact Us</button>
     </div>
+    <!--------- footer --------->
     <div>
-      <img src="images/icon-facebook.svg" alt="">
-      <img src="images/icon-twitter.svg" alt="">
-    </div> 
-  </div>
-<!-- 
+      <div>
+        <img src="images/logo-bookmark.svg" alt="logo-bookmark" />
+        <ul>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <img src="images/icon-facebook.svg" alt="" />
+        <img src="images/icon-twitter.svg" alt="" />
+      </div>
+    </div>
+    <!-- 
     <footer>
       <p class="attribution">
         Challenge by
