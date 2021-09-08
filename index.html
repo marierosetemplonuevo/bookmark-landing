@@ -54,17 +54,26 @@
     </div>
     <!--------- 1st part--------->
     <div class="intro">
-      <div class="image"><img src="images/illustration-hero.svg" alt="" /></div>
-
-      <h2>A Simple Bookmark Manager</h2>
-      <p>
-        A clean and simple interface to organize your favourite websites. Open a
-        new browser tab and see your sites load instantly. Try it for free.
-      </p>
-      <button>Get it on Chrome</button>
-      <button class="gray">Get it on Firefox</button>
+      <div class="image">
+        <div class="first-img-container">
+          <img src="images/illustration-hero.svg" alt="" class="first-img" />
+        </div>
+        <div class="oval-container">
+          <img src="images/oval copy.png" alt="" class="right-oval" />
+        </div>
+      </div>
+      <div class="intro-content">
+        <h2>A Simple Bookmark Manager</h2>
+        <p>
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <button>Get it on Chrome</button>
+        <button class="gray">Get it on Firefox</button>
+      </div>
     </div>
     <!--------- 2nd part--------->
+
     <div class="features">
       <h3>Features</h3>
       <p>
@@ -75,13 +84,22 @@
     </div>
     <!--------------------- tab ------------------------>
     <div class="feature-tab">
-      <nav class="active">Simple Bookmarking</nav>
-      <nav>Speedy Searching</nav>
-      <nav>Easy Sharing</nav>
+      <div class="tab-container">
+        <nav class="active">Simple Bookmarking</nav>
+        <nav>Speedy Searching</nav>
+        <nav>Easy Sharing</nav>
+      </div>
     </div>
     <!--------- tab content --------->
     <div class="tab-body">
-      <img src="images/illustration-features-tab-1.svg" alt="" />
+      <div class="tab-image">
+        <img
+          src="images/illustration-features-tab-1.svg"
+          alt=""
+          class="tab-one"
+        />
+        <img src="images/oval.png" alt="" class="left-oval" />
+      </div>
       <div class="tab-content">
         <h3>Bookmark in one click</h3>
         <p>
@@ -138,71 +156,154 @@
     </div>
 
     <!--------- 4th part --------->
-    <div>
-      <h3>Frequently Asked Questions</h3>
-      <p>
-        Here are some of our FAQs. If you have any other questions you’d like
-        answered please feel free to emailus.
-      </p>
-    </div>
-    <div>
-      <ul>
-        <li>
-          What is Bookmark?
-          <ul>
-            <li>
+    <div class="questions-container">
+      <div class="header-questions">
+        <h3>Frequently Asked Questions</h3>
+
+        <p class="text-secondary">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to emailus.
+        </p>
+      </div>
+
+      <div class="accordion" id="accordionList">
+        <div class="accordion-item">
+          <h2 id="accordionHeadingFirst" class="accordion-header">
+            <button
+              class="accordion-button  collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordionCollapseFirst"
+              aria-expanded="false"
+              aria-controls="#accordionCollapseFirst"
+            >
+              What is Bookmark?
+            </button>
+          </h2>
+          <div
+            id="accordionCollapseFirst"
+            class="accordion-collapse collapse"
+            aria-labelledby="#accordionHeadingFirst"
+            data-bs-parent="#accordionList"
+          >
+            <div class="accordion-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
               quis quam ornare mattis.
-            </li>
-          </ul>
-        </li>
-        <li>
-          How can I request a new browser?
-          <ul>
-            <li>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="accordionHeadingSecond">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordionCollapseSecond"
+              aria-expanded="false"
+              aria-controls="#accordionCollapseSecond"
+            >
+              How can I request a new browser?
+            </button>
+          </h2>
+          <div
+            id="accordionCollapseSecond"
+            class="accordion-collapse collapse"
+            aria-labelledby="#accordionHeadingSecond"
+            data-bs-parent="#accordionList"
+          >
+            <div class="accordion-body">
               Vivamus luctus eros aliquet convallis ultricies. Mauris augue
               massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
               eros aliquet convallis ultricies. Mauris augue massa, ultricies
               non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
               convallis ultricies. Mauris augue massa, ultricies non ligula.
               Suspendisse imperdiet.
-            </li>
-          </ul>
-        </li>
-        <li>
-          Is there a mobile app?
-          <ul>
-            <li>
-              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
-              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
-              ligula quis est pharetra mattis sit amet pharetra purus. Sed
-              sollicitudin ex et ultricies bibendum.
-            </li>
-          </ul>
-        </li>
-        <li>
-          What about other Chromium browsers?
-          <ul>
-            <li>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="accordionHeadingThird">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordionCollapseThird"
+              aria-expanded="false"
+              aria-controls="#accordionCollapseThird"
+            >
+              What about other Chromium browsers?
+            </button>
+          </h2>
+          <div
+            id="accordionCollapseThird"
+            class="accordion-collapse collapse"
+            aria-labelledby="#accordionHeadingThird"
+            data-bs-parent="#accordionList"
+          >
+            <div class="accordion-body">
               Integer condimentum ipsum id imperdiet finibus. Vivamus in
               placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
               pellentesque non ut velit.
-            </li>
-          </ul>
-        </li>
-      </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="accordionHeadingFourth">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#accordionCollapseFourth"
+              aria-expanded="false"
+              aria-controls="#accordionCollapseFourth"
+            >
+              What about other Chromium browsers?
+            </button>
+          </h2>
+          <div
+            id="accordionCollapseFourth"
+            class="accordion-collapse collapse"
+            aria-labelledby="#accordionHeadingFourth"
+            data-bs-parent="#accordionList"
+          >
+            <div class="accordion-body">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
       <button>More Info</button>
     </div>
+
     <!---------5th part --------->
-    <div>
+    <div class="contact">
       <p>35,000+ already joined</p>
       <h3>Stay up-to-date with what we’re doing</h3>
-      <input type="text" /> <button class="redbtn">Contact Us</button>
+      <div class="form-floating">
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          aria-describedby="emailus"
+          placeholder="email"
+        />
+        <label for="emailus" class=" text-secondary"
+          >Enter your email address</label
+        >
+      </div>
+      <button class="redbtn">Contact Us</button>
     </div>
     <!--------- footer --------->
-    <div>
-      <div>
+    <div class="footer-container">
+      <div class="footer-menu">
         <img src="images/logo-bookmark.svg" alt="logo-bookmark" />
         <ul>
           <li>Features</li>
@@ -210,7 +311,7 @@
           <li>Contact</li>
         </ul>
       </div>
-      <div>
+      <div class="footer-social">
         <img src="images/icon-facebook.svg" alt="" />
         <img src="images/icon-twitter.svg" alt="" />
       </div>

@@ -1,20 +1,25 @@
+html {
+  width: 1900px;
+  /* margin: 0;
+  display: flex; */
+}
+
 body {
-  width: 1440px;
+  /* margin: 0; */
+  width: 100%;
   font-family: "Rubik", sans-serif;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  padding-top: 20px;
+  display: flex; flex-wrap: wrap;
+/* 
+  padding-top: 20px; */
 }
 
 .header {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  width: 75%;
-  padding-bottom: 100px;
+  padding: 10px 200px 100px;
+  width: 100%;
+  padding-bottom: ;
 }
 
 .logo {
@@ -60,13 +65,47 @@ p {
 }
 .intro {
   display: inline-block;
-  width: 80%;
+  width: 100%;
+  padding-left: 200px;
+  margin-bottom: 200px;
 }
 
 .image {
   float: right;
 }
 
+.first-img-container {
+  margin-left: -200px;
+  position: absolute;
+  z-index: 3;
+}
+
+img.first-img {
+  width: 700px;
+  height: auto;
+}
+
+.oval-container {
+  margin-top: 150px;
+  z-index: -1;
+  position: relative;
+}
+
+img.right-oval {
+  width: 600px;
+
+  margin-bottom: -100px;
+  z-index: -1;
+}
+
+.intro-content {
+  width: 30%;
+}
+
+.intro-content p {
+  line-height: 2;
+  padding-bottom: 10px;
+}
 button {
   background-color: hsl(231, 69%, 60%);
   color: white;
@@ -88,16 +127,38 @@ button.gray {
 /* <!--------- 2nd part--------->  */
 
 .features {
+  width: 100%;
   text-align: center;
-  padding: 0 450px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 400px;
 }
 
+.features h3 {
+  width: 1000px;
+  margin: 0;
+}
+
+.features p {
+  width: 550px;
+}
+
+
 .feature-tab {
+width: 100%;
+display: flex;
+justify-content: center;
+  
+  margin: 20px 0;
+  
+}
+
+.tab-container {
   display: flex;
   justify-content: space-around;
-  width: 600px;
   color: hsl(229, 8%, 60%);
-  margin: 20px 0;
+  width: 800px;
   border-bottom: 2px solid rgba(214, 217, 224, 0.952);
 }
 
@@ -117,31 +178,80 @@ nav.active {
 .tab-body {
   display: flex;
   justify-content: center;
-  margin: 30px 0 30px 20px;
-  width: 1150px;
+  margin: 30px 0 250px 0;
+  width: 1900px;
 }
 
 .tab-body img {
   margin-right: 120px;
 }
 
+.tab-image {
+  float: left;
+  margin-right: 200px;
+}
+
+img.tab-one {
+  
+  position: absolute;
+  z-index: 3;
+
+  margin-left: 200px;
+}
+
+img.tab-one{
+  width: 700px;
+  height: auto;
+}
+
+img.left-oval {
+  margin-top: 150px;
+  z-index: -1;
+  position: relative;
+}
+
+.left-oval {
+  width: 800px;
+  height: 418px;
+  margin-bottom: -100px;
+}
+
+
 .tab-content {
   display: inline-block;
   padding: 80px 0;
-
-  margin-right: 50px;
+ margin-right: 320px;
+ line-height: 2;
+ 
+}
+.tab-content p {
+line-height: 2;
 }
 
 /* <!--------- 3rd part ---------> */
 .download {
+  width: 100%;
   text-align: center;
-  padding: 0 450px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 400px;
+}
+
+.download h3 {
+  width: 1000px;
+  margin: 0;
+}
+
+.download p {
+  width: 550px;
 }
 
 .browser {
   display: flex;
-  width: 1200px;
+  width: 100%;
   justify-content: center;
+  margin: 50px 0 100px;
 }
 
 .chrome {
@@ -267,4 +377,121 @@ nav.active {
 .opera button {
   padding: 10px 30px;
   font-family: font-family: "Rubik", sans-serif;
+}
+
+/* <!--------- 4th part ---------> */
+.questions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+
+.header-questions {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 400px;
+}
+
+.header-questions h3 {
+  width: 1000px;
+  margin: 0;
+}
+
+.header-questions p {
+  width: 550px;
+}
+
+#accordionList {
+  width: 1440px;
+  padding: 0 450px;
+  margin: 40px 200px 40px;
+  
+}
+
+
+.accordion-item h2 {
+  margin: 0;
+}
+
+
+
+/*----------------contact--------------------------*/
+.contact {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  width: 100%;
+  padding: 60px 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact p {
+  color: white;
+  font-size: 11px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact h3 {
+  width: 500px;
+  padding: 20px 50px;
+}
+
+.form-floating {
+  height: 40px;
+  width: 300px;
+  margin-right: 30px ;
+}
+
+
+
+.contact button {
+  width: auto;
+  height: 50px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/*----------------footer--------------------------*/
+
+.footer-container {
+  width: 100%;
+  background-color: hsl(229, 31%, 21%);
+  display: flex;
+  flex-direction: row;
+  padding: 20px 200px;
+  justify-content: space-between;
+
+}
+
+.footer-menu {
+  width: 700px;
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.footer-menu ul {
+  color: white;
+  width: 500px;
+display: flex;
+justify-content: space-around;
+}
+
+
+
+.footer-social img {
+  padding: 0 20px;
+
 }
